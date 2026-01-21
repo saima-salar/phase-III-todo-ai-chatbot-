@@ -1,0 +1,93 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+target/
+*.class
+*.jar
+bin/
+obj/
+packages/
+vendor/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.directory
+.Trashes
+*.DS_Store
+.Trash-*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.suo
+*.user
+*.useros
+*.userprefs
+.c9/
+*.pid
+*.seed
+*.idx
+
+# Testing
+coverage/
+.nyc_output
+.pytest_cache/
+.coverage*
+
+# Local configuration
+.settings/
+config/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store*
+
+# Documentation
+docs/_build/
+
+# Database
+*.db
+*.db-journal
+
+# Next.js
+.next/
+out/
+
+# Platform-specific
+*.dll
+*.exe
+*.so
+*.dylib
+
+# Sensitive files
+secrets/
+credentials.json
+private.key
+id_rsa
+
+nul
