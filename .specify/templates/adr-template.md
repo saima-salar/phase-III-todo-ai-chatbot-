@@ -25,7 +25,6 @@
 -->
 
 ## Consequences
-
 ### Positive
 
 {{POSITIVE_CONSEQUENCES}}

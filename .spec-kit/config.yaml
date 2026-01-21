@@ -1,0 +1,27 @@
+# .spec-kit/config.yaml
+project:
+  name: "Todo Full-Stack Web Application"
+  version: "1.0.0"
+  description: "A comprehensive todo application with advanced features"
+  type: "full-stack"
+
+directories:
+  specs:
+    - "./specs/"
+  api:
+    - "./specs/api/"
+  features:
+    - "./specs/features/"
+  architecture:
+    - "./specs/architecture/"
+
+files:
+  overview: "./specs/overview.md"
+  architecture: "./specs/architecture.md"
+
+tools:
+  frontend: "Next.js 16+"
+  backend: "Python FastAPI"
+  database: "Neon Serverless PostgreSQL"
+  auth: "Better Auth"
+  orm: "SQLModel"

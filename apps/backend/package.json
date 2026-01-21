@@ -1,0 +1,26 @@
+{
+  "name": "@todo/backend",
+  "version": "1.0.0",
+  "description": "FastAPI backend for the Todo application",
+  "scripts": {
+    "dev": "cd ../.. && python apps/backend/main.py",
+    "start": "cd ../.. && python apps/backend/server.py",
+    "serve": "cd ../.. && uvicorn apps.backend.main:app --host 0.0.0.0 --port 8000",
+    "test": "cd ../.. && python -m pytest apps/backend",
+    "lint": "cd ../.. && python -m flake8 apps/backend",
+    "format": "cd ../.. && python -m black apps/backend"
+  },
+  "keywords": [
+    "fastapi",
+    "python",
+    "backend",
+    "todo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "todo-full-stack-monorepo",
+  "version": "1.0.0",
+  "description": "Monorepo for the Todo Full-Stack Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --parallel --filter './apps/*' dev",
+    "build": "pnpm --filter './apps/*' build",
+    "start": "concurrently \"pnpm --filter './apps/backend' start\" \"pnpm --filter './apps/frontend' start\"",
+    "test": "pnpm --recursive test",
+    "lint": "pnpm --recursive lint",
+    "clean": "pnpm --recursive exec rimraf dist coverage .nyc_output .next",
+    "install-all": "pnpm install && pnpm --recursive install"
+  },
+  "keywords": [
+    "monorepo",
+    "todo",
+    "fullstack",
+    "nextjs",
+    "fastapi"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "rimraf": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
